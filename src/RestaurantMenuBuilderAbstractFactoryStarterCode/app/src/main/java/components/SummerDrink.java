@@ -5,16 +5,25 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of drink for summer.
+ * This class implements the Drink interface and provides
+ * a string representation of summer-themed drinks.
+ * 
+ * @author Gurnoor Kaur
  */
 public class SummerDrink implements Drink {
 
-	@Override
+    /**
+     * Returns a string representation of the summer drinks.
+     *
+     * @return a string listing the summer drinks: Lemonade,
+     *         Sangria, and Rum Punch.
+     */
+    @Override
     public String toString() {
-		 return "Lemonade\n" +
-	               "Sangria\n" +
-	               "Rum Punch";
+        return "Lemonade\n" +
+               "Sangria\n" +
+               "Rum Punch";
     }
  
 }

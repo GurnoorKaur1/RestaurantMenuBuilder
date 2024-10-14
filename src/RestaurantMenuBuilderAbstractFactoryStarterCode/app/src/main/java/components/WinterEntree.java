@@ -5,15 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of entree for winter.
+ * This class implements the Entree interface and provides
+ * a string representation of winter-themed entrees.
+ * 
+ * @author Gurnoor Kaur
  */
 public class WinterEntree implements Entree {
   
-	@Override
+    /**
+     * Returns a string representation of the winter entrees.
+     *
+     * @return a string listing the winter entrees: Sesame Soy Tartare,
+     *         Boston Clam Chowder, and Thai Soup.
+     */
+    @Override
     public String toString() {
-		return "Sesame Soy Tartare\n" +
-	               "Boston Clam Chowder\n" +
-	               "Thai Soup";
+        return "Sesame Soy Tartare\n" +
+               "Boston Clam Chowder\n" +
+               "Thai Soup";
     }
 }

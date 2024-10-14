@@ -5,15 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of dessert for fall.
+ * This class implements the Dessert interface and provides
+ * a string representation of fall-themed desserts.
+ * 
+ * @author Gurnoor Kaur
  */
 public class FallDessert implements Dessert {
 
-	@Override
+    /**
+     * Returns a string representation of the fall desserts.
+     *
+     * @return a string listing the fall desserts: Carrot Cake,
+     *         White Chocolate Cheesecake, and Apple Pie.
+     */
+    @Override
     public String toString() {
-		return  "Carrot Cake\n" +
-	               "White Chocolate Cheesecake\n" +
-	               "Apple Pie\n";
+        return  "Carrot Cake\n" +
+                "White Chocolate Cheesecake\n" +
+                "Apple Pie\n";
     }
 }

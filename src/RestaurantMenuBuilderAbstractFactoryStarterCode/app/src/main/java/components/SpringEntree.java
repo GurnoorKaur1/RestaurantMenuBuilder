@@ -5,15 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of entree for spring.
+ * This class implements the Entree interface and provides
+ * a string representation of spring-themed entrees.
+ * 
+ * @author Gurnoor Kaur
  */
 public class SpringEntree implements Entree {
     
-	@Override
+    /**
+     * Returns a string representation of the spring entrees.
+     *
+     * @return a string listing the spring entrees: Lobster Veracruzana,
+     *         Organic Ocean Halibut, and Mushroom Soup.
+     */
+    @Override
     public String toString() {
-		return "Lobster Veracruzana\n" +
-	               "Organic Ocean Halibut\n" +
-	               "Mushroom Soup";
+        return "Lobster Veracruzana\n" +
+               "Organic Ocean Halibut\n" +
+               "Mushroom Soup";
     }
 }

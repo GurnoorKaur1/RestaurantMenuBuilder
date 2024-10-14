@@ -5,15 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of entree for summer.
+ * This class implements the Entree interface and provides
+ * a string representation of summer-themed entrees.
+ * 
+ * @author Gurnoor Kaur
  */
 public class SummerEntree implements Entree {
     
-	@Override
+    /**
+     * Returns a string representation of the summer entrees.
+     *
+     * @return a string listing the summer entrees: Avocado Scramble,
+     *         Little Gem Salad, and Miso Cauliflower Soup.
+     */
+    @Override
     public String toString() {
-		 return "Avocado scramble\n" +
-	               "Little Gem Salad\n" +
-	               "Miso Cauliflower Soup";
+        return "Avocado scramble\n" +
+               "Little Gem Salad\n" +
+               "Miso Cauliflower Soup";
     }
 }

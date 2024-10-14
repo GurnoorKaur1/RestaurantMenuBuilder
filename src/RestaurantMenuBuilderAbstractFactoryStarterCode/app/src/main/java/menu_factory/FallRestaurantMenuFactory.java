@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menu_factory;
+
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Dessert;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Drink;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.MainCourse;
@@ -13,29 +14,50 @@ import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.compone
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.FallMainCourse;
 
 /**
- *
- * @author gouraya
+ * Factory class to create components for the Fall restaurant menu.
+ * Implements the RestaurantMenuFactory interface to provide seasonal menu items.
+ * 
+ * @author Gurnoor Kaur
  */
 public class FallRestaurantMenuFactory implements RestaurantMenuFactory {
 
-	   @Override
-	    public Drink createDrink() {
-	        return new FallDrink();
-	    }
-	    
-	    @Override
-	    public MainCourse createMainCourse() {
-	        return new FallMainCourse();
-	    }
+    /**
+     * Creates a Fall-specific drink.
+     *
+     * @return a Drink instance representing a Fall drink.
+     */
+    @Override
+    public Drink createDrink() {
+        return new FallDrink();
+    }
+    
+    /**
+     * Creates a Fall-specific main course.
+     *
+     * @return a MainCourse instance representing a Fall main course.
+     */
+    @Override
+    public MainCourse createMainCourse() {
+        return new FallMainCourse();
+    }
 
-	    @Override
-	    public Entree createEntree() {
-	        return new FallEntree();
-	    }
+    /**
+     * Creates a Fall-specific entree.
+     *
+     * @return an Entree instance representing a Fall entree.
+     */
+    @Override
+    public Entree createEntree() {
+        return new FallEntree();
+    }
 
-	    @Override
-	    public Dessert createDessert() {
-	        return new FallDessert();
-	    }    
-	}   
-
+    /**
+     * Creates a Fall-specific dessert.
+     *
+     * @return a Dessert instance representing a Fall dessert.
+     */
+    @Override
+    public Dessert createDessert() {
+        return new FallDessert();
+    }    
+}

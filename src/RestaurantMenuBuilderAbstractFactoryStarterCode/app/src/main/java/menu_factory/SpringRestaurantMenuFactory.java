@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menu_factory;
+
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Dessert;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Drink;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Entree;
@@ -11,13 +12,18 @@ import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.compone
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.SpringDrink;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.SpringEntree;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.SpringMainCourse;
+
 /**
- *
- * @author gouraya
+ * SpringRestaurantMenuFactory is responsible for creating components of the 
+ * spring menu, including drinks, entrees, main courses, and desserts. 
+ * This factory follows the abstract factory design pattern to produce 
+ * seasonal menu items.
+ * 
+ * @author Gurnoor Kaur
  */
 public class SpringRestaurantMenuFactory implements RestaurantMenuFactory {
 
-	@Override
+    @Override
     public Drink createDrink() {
         return new SpringDrink();
     }

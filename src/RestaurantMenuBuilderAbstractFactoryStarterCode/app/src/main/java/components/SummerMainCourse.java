@@ -5,15 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of main course for summer.
+ * This class implements the MainCourse interface and provides
+ * a string representation of summer-themed main courses.
+ * 
+ * @author Gurnoor Kaur
  */
 public class SummerMainCourse implements MainCourse {
 
-	@Override
+    /**
+     * Returns a string representation of the summer main courses.
+     *
+     * @return a string listing the summer main courses: Beef Tartare,
+     *         Spiced Cauliflower, and Chinook Salmon.
+     */
+    @Override
     public String toString() {
-		return "Beef Tartare\n" +
-	               "Spiced Cauliflower\n" +
-	               "Chinook Salmon";
+        return "Beef Tartare\n" +
+               "Spiced Cauliflower\n" +
+               "Chinook Salmon";
     }
 }

@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menu_building;
+
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menu_factory.FallRestaurantMenuFactory;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menu_factory.SpringRestaurantMenuFactory;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menu_factory.SummerRestaurantMenuFactory;
@@ -13,13 +14,23 @@ import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menus.S
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menus.SummerRestaurantMenu;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menus.WinterRestaurantMenu;
 
-
 /**
- *
- * @author gouraya
+ * Concrete implementation of the MenuBuilding class.
+ * This class is responsible for creating different types of restaurant menus
+ * based on the specified season.
+ * 
+ * @author Gurnoor Kaur
  */
 public class ConcreteMenuBuilding extends MenuBuilding {
     
+    /**
+     * Creates a RestaurantMenu based on the provided season.
+     *
+     * @param season the season for which the menu is to be created.
+     *               It can be "Fall", "Winter", "Spring", or "Summer".
+     * @return the constructed RestaurantMenu for the specified season,
+     *         or null if the season is unrecognized.
+     */
     @Override
     protected RestaurantMenu makeMenuBuilding(String season) {
         RestaurantMenu theMenu = null;
@@ -49,5 +60,4 @@ public class ConcreteMenuBuilding extends MenuBuilding {
         }
         return theMenu;
     }
-    
 }

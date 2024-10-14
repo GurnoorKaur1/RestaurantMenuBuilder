@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.menu_factory;
+
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Dessert;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Drink;
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.MainCourse;
@@ -13,12 +14,16 @@ import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.compone
 import RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components.Entree;
 
 /**
- *
- * @author gouraya
+ * WinterRestaurantMenuFactory is responsible for creating components of the 
+ * winter menu, including drinks, entrees, main courses, and desserts. 
+ * This factory follows the abstract factory design pattern to produce 
+ * seasonal menu items.
+ * 
+ * @author Gurnoor Kaur
  */
 public class WinterRestaurantMenuFactory implements RestaurantMenuFactory {
     
-	@Override
+    @Override
     public Drink createDrink() {
         return new WinterDrink();
     }
@@ -37,6 +42,4 @@ public class WinterRestaurantMenuFactory implements RestaurantMenuFactory {
     public Dessert createDessert() {
         return new WinterDessert();
     }   
-
-    
 }

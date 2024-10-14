@@ -5,11 +5,19 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Interface representing an Entree component in the restaurant menu.
+ * This interface defines the contract for all entree types in the menu.
+ * Implementing classes must provide a string representation of the entree.
+ * 
+ * @author Gurnoor Kaur
  */
 public interface Entree {
     
+    /**
+     * Returns a string representation of the entree.
+     *
+     * @return a string describing the entree.
+     */
     @Override
     public String toString();
     

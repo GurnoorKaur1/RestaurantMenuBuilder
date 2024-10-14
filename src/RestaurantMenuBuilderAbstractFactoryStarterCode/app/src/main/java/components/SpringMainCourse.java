@@ -5,16 +5,25 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of main course for spring.
+ * This class implements the MainCourse interface and provides
+ * a string representation of spring-themed main courses.
+ * 
+ * @author Gurnoor Kaur
  */
 public class SpringMainCourse implements MainCourse {
     
-	@Override
+    /**
+     * Returns a string representation of the spring main courses.
+     *
+     * @return a string listing the spring main courses: Sunny Rise Burger,
+     *         California Spring Salad, and Crispy Chicken Sandwich.
+     */
+    @Override
     public String toString() {
-		return "Sunny Rise Burger\n" +
-	               "California Spring Salad\n" +
-	               "Crispy Chicken Sandwich";
+        return "Sunny Rise Burger\n" +
+               "California Spring Salad\n" +
+               "Crispy Chicken Sandwich";
     }
     
 }

@@ -5,15 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of dessert for spring.
+ * This class implements the Dessert interface and provides
+ * a string representation of spring-themed desserts.
+ * 
+ * @author Gurnoor Kaur
  */
 public class SpringDessert implements Dessert {
    
-	@Override
+    /**
+     * Returns a string representation of the spring desserts.
+     *
+     * @return a string listing the spring desserts: Vanilla Crème Brûlée,
+     *         White Chocolate Brownie, and Passion Fruit Fig Tart.
+     */
+    @Override
     public String toString() {
-		return "Vanilla Crème Brûlée\n" +
-	               "White Chocolate Brownie\n" +
-	               "Passion Fruit Fig Tart";
+        return "Vanilla Crème Brûlée\n" +
+               "White Chocolate Brownie\n" +
+               "Passion Fruit Fig Tart";
     }
 }

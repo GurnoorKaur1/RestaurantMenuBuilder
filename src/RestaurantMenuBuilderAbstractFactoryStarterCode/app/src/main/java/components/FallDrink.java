@@ -5,15 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of drink for fall.
+ * This class implements the Drink interface and provides
+ * a string representation of fall-themed drinks.
+ * 
+ * @author Gurnoor Kaur
  */
 public class FallDrink implements Drink {
 
-	 @Override
-	    public String toString() {
-		 return "Margarita\n" +
-	               "Dark Rum\n" +
-	               "Orange Juice";
-	    }
+    /**
+     * Returns a string representation of the fall drinks.
+     *
+     * @return a string listing the fall drinks: Margarita,
+     *         Dark Rum, and Orange Juice.
+     */
+    @Override
+    public String toString() {
+        return "Margarita\n" +
+               "Dark Rum\n" +
+               "Orange Juice";
+    }
 }

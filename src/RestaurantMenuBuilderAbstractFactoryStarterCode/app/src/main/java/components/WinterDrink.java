@@ -5,16 +5,24 @@
 package RestaurantMenuBuilderAbstractFactoryStarterCode.app.src.main.java.components;
 
 /**
- *
- * @author gouraya
+ * Class representing a specific type of drink for winter.
+ * This class implements the Drink interface and provides
+ * a string representation of winter-themed drinks.
+ * 
+ * @author Gurnoor Kaur
  */
 public class WinterDrink implements Drink  {
-	@Override
-    public String toString() {
-		return "Mojito\n" +
-	               "Alcohol Free Wine\n" +
-	               "Tequila";
-    }
- 
     
+    /**
+     * Returns a string representation of the winter drinks.
+     *
+     * @return a string listing the winter drinks: Mojito,
+     *         Alcohol Free Wine, and Tequila.
+     */
+    @Override
+    public String toString() {
+        return "Mojito\n" +
+               "Alcohol Free Wine\n" +
+               "Tequila";
+    }
 }
